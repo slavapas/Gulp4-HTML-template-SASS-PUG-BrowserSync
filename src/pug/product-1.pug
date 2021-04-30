@@ -1,0 +1,59 @@
+doctype html
+html(lang="en")
+  include parts/head.pug
+  body#body-id
+    //- HEADER
+    include parts/header.pug
+
+    section#showcase_title.showcase.bg-black
+      #showcase-id.showcase-container.showcase-inner
+        .container.container-bg
+          .single_product
+            .row
+              .col-md-6
+                .single_product_title__details-sm
+                  .single_product__title-sm
+                    h3 Product 1
+                  .single_product__price-sm $150
+                .single_product__gallery
+                  .big-img
+                    img(src='img/t-shirt-main.jpg')
+                  .small-img.single_product__img
+                      a(data-fancybox='gallery' href='img/t-shirt-main.jpg')
+                        img(src='img/t-shirt-main.jpg')
+                      a(data-fancybox='gallery' href='img/t-shirt-main.jpg')
+                        img(src='img/t-shirt-main.jpg')
+                      a(data-fancybox='gallery' href='img/t-shirt-main.jpg')
+                        img(src='img/t-shirt-main.jpg')
+                      a(data-fancybox='gallery' href='img/t-shirt-main.jpg')
+                        img(src='img/t-shirt-main.jpg')
+                      a(data-fancybox='gallery' href='img/t-shirt-main.jpg')
+                        img(src='img/t-shirt-main.jpg')
+                      a(data-fancybox='gallery' href='img/t-shirt-main.jpg')
+                        img(src='img/t-shirt-main.jpg')
+              .col-md-6
+                .single_product__details.single_product__description
+                  .single_product__title-md
+                    h3 Product 1
+                  .single_product_sizes-lg
+                    .single_product__sizes
+                      .size_sm XS
+                      .size_sm S
+                      .size_sm M
+                    .single_product__sizes
+                      .size_sm L
+                      .size_sm XL
+                      .size_sm 2XL
+                  .single_product__buttons
+                    button(type='button' ).single_product__buynow-lg Buy it now
+                    button(type='button' disabled='').single_product__preorder-lg Preorder
+                  .single_product_title__details-md
+                    .single_product__price-md Price
+                      span $150
+                  .single_product__details
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus excepturi, a consequuntur voluptatem consectetur con Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus excepturi, a consequuntur voluptatem consectetur con Lorem ipsum dolor sit
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus excepturi, a consequuntur voluptatem consectetur con Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus excepturi, a consequuntur voluptatem consectetur con Lorem ipsum dolor sit
+
+
+    //- FOOTER
+    include parts/footer.pug

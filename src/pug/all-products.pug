@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  include parts/head.pug
+  body#body-id
+    //- HEADER
+    include parts/header.pug
+    section#showcase_title.showcase.bg-black
+      #showcase-id.showcase-container.showcase-inner
+        #carbon-block.products
+          #app.products__gallery
+            .products__image.rotate
+              img(src='img/t-shirt-main.jpg' alt='')
+            .products__image.rotate-rev
+              img(src='img/t-shirt-main.jpg' alt='')
+            .products__image.rotate
+              img(src='img/t-shirt-main.jpg' alt='')
+    //- FOOTER
+    include parts/footer.pug

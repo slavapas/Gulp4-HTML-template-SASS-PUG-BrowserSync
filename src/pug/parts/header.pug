@@ -1,0 +1,59 @@
+#body-wrapper
+  .preloader
+    .preloader__row
+      .dots
+        .loading-text Loading
+        .dots-divs
+          .dots-div
+          .dots-div
+          .dots-div
+          .dots-div
+          .dots-div
+  .sandy-video_bg
+    // <div class="grained"></div>
+    video#myVideo(autoplay='' muted='' loop='')
+      source(src='video/video.mp4' type='video/mp4')
+      //- source(src='video/home.webm' type='video/mp4')
+  .circle-square
+    .circle
+    .square
+  .logo.light
+    .logo_text
+      a(href='/') MERCH
+  .menu-wrap
+    .bascket
+      a(href='/basket.html')
+        img(src='img/basket-2.png')
+    input.toggler(type='checkbox')
+    .hamburger
+      div
+    .mymenu.closed
+      ul.mymenu_list
+        li
+          a.mymenu_list__elements(data-text='Product 1' href='product-1.html') Product 1
+        li
+          a.mymenu_list__elements(data-text='Product 2' href='product-2.html') Product 2
+        li
+          a.mymenu_list__elements(data-text='Product 3' href='product-3.html') Product 3
+        li
+          a.mymenu_list__elements(data-text='Product 4' href='product-4.html') Product 4
+        //- li
+        //-   a.mymenu_list__elements(data-text='All Products' href='all-products.html')
+        //-     | All
+        //-     | Products
+        //- li
+        //-   a.mymenu_list__elements(data-text='Contact' href='contact.html') Contact
+    .details
+      ul
+        li.main-title
+          p Socials
+        li.secondary-details
+          p Facebook
+        li.main-title
+          p Telephone
+        li.secondary-details
+          p +100000000000
+        li.main-title
+          p Title
+        li.secondary-details
+          p Details

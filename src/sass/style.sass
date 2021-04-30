@@ -1,0 +1,1671 @@
+$main-bg-color: #000000
+$main-bg-opacity: 0.9
+$main-text-color: #ffffff
+$main-hover-text-color: #000000
+$logo-light-color: #eee
+$logo-dark-color: rgb(70, 70, 70)
+$menu-hamburger-main: #eee
+$menu-hamburger-second: #000
+$menu-bg-color: #ffffff
+$menu-text-color: rgb(0, 0, 0)
+$menu-hover-text-color: rgb(0, 0, 0)
+$mouse-color-circle-romb: #FFFFFF
+$button-color: #7c7c7c
+$main-font-family: 'trojan-pro-regular', Courier, sans-serif
+$main-font-family-title: 'ImpactRegular', Courier, sans-serif
+$elements-padding-bottom: 30px
+/* Variables
+.view
+  display: block
+  // height: 100vh
+
+.light
+  color: $logo-light-color
+
+.dark
+  color: $logo-dark-color
+
+.bg-black
+  background: black
+  opacity: 1
+
+/* ======= Font Family ===========
+@font-face
+  font-family: "ImpactRegular"
+  src: url("fonts/ImpactRegular/ImpactRegular.eot")
+  src: url("fonts/ImpactRegular/ImpactRegular.eot?#iefix") format("embedded-opentype"), url("fonts/ImpactRegular/ImpactRegular.woff") format("woff"), url("fonts/ImpactRegular/ImpactRegular.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+
+@font-face
+  font-family: "trojan-pro-black"
+  src: url("fonts/TrajanPro3Black.eot")
+  src: url("fonts/TrajanPro3Black.eot?#iefix") format("embedded -opentype"), url("fonts/TrajanPro3Black.woff") format("woff"), url("fonts/TrajanPro3Black.ttf") format("truetype"), url("fonts/TrajanPro3Black.woff#TrajanPro3Black") format("svg")
+
+@font-face
+  font-family: "trojan-pro-bold"
+  src: url("fonts/TrajanPro3Bold.eot")
+  src: url("fonts/TrajanPro3Bold.eot?#iefix") format("embedded -opentype"), url("fonts/TrajanPro3Bold.woff") format("woff"), url("fonts/TrajanPro3Bold.ttf") format("truetype"), url("fonts/TrajanPro3Bold.woff#TrajanPro3Bold") format("svg")
+
+@font-face
+  font-family: "trojan-pro-regular"
+  src: url("fonts/TrajanPro3Regular.eot")
+  src: url("fonts/TrajanPro3Regular.eot?#iefix") format("embedded -opentype"), url("fonts/TrajanPro3Regular.woff") format("woff"), url("fonts/TrajanPro3Regular.ttf") format("truetype"), url("fonts/TrajanPro3Regular.woff#TrajanPro3Regular") format("svg")
+
+@font-face
+  font-family: "trojan-pro-extra-light"
+  src: url("fonts/TrajanPro3ExtraLight.eot")
+  src: url("fonts/TrajanPro3ExtraLight.eot?#iefix") format("embedded -opentype"), url("fonts/TrajanPro3ExtraLight.woff") format("woff"), url("fonts/TrajanPro3ExtraLight.ttf") format("truetype"), url("fonts/TrajanPro3ExtraLight.woff#TrajanPro3ExtraLight") format("svg")
+
+@font-face
+  font-family: "trojan-pro-light"
+  src: url("fonts/TrajanPro3Light.eot")
+  src: url("fonts/TrajanPro3Light.eot?#iefix") format("embedded -opentype"), url("fonts/TrajanPro3Light.woff") format("woff"), url("fonts/TrajanPro3Light.ttf") format("truetype"), url("fonts/TrajanPro3Light.woff#TrajanPro3Light") format("svg")
+
+@font-face
+  font-family: "trojan-pro-semi-bold"
+  src: url("fonts/TrajanPro3SemiBold.eot")
+  src: url("fonts/TrajanPro3SemiBold.eot?#iefix") format("embedded -opentype"), url("fonts/TrajanPro3SemiBold.woff") format("woff"), url("fonts/TrajanPro3SemiBold.ttf") format("truetype"), url("fonts/TrajanPro3SemiBold.woff#TrajanPro3SemiBold") format("svg")
+
+@font-face
+  font-family: "aktivgrotesk-bold"
+  src: url("fonts/aktivgrotesk-bold.eot")
+  src: url("fonts/aktivgrotesk-bold.eot?#iefix") format("embedded -opentype"), url("fonts/aktivgrotesk-bold.woff") format("woff"), url("fonts/aktivgrotesk-bold.ttf") format("truetype"), url("fonts/aktivgrotesk-bold.woff#aktivgrotesk-bold") format("svg")
+
+@font-face
+  font-family: "aktivgrotesk-regular"
+  src: url("fonts/aktivgrotesk-regular.eot")
+  src: url("fonts/aktivgrotesk-regular.eot?#iefix") format("embedded -opentype"), url("fonts/aktivgrotesk-regular.woff") format("woff"), url("fonts/aktivgrotesk-regular.ttf") format("truetype"), url("fonts/aktivgrotesk-regular.woff#aktivgrotesk-regular") format("svg")
+
+@font-face
+  font-family: "anton-regular"
+  src: url("fonts/anton-regular.eot")
+  src: url("fonts/anton-regular.eot?#iefix") format("embedded -opentype"), url("fonts/anton-regular.woff") format("woff"), url("fonts/anton-regular.ttf") format("truetype"), url("fonts/anton-regular.woff#anton-regular") format("svg")
+
+@font-face
+  font-family: "braggest"
+  src: url("fonts/braggest.eot")
+  src: url("fonts/braggest.eot?#iefix") format("embedded -opentype"), url("fonts/braggest.woff") format("woff"), url("fonts/braggest.ttf") format("truetype"), url("fonts/braggest.woff#braggest") format("svg")
+
+/* General CSS
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: $main-font-family
+
+  /* cursor: pointer;
+
+body
+  font-family: $main-font-family
+  // font-family: 'anton-regular', sans-serif
+  line-height: 1.4
+  font-size: 16px
+  --mouseX: 0deg
+  --mouseY: 0deg
+  perspective: 60vw
+  padding: 0
+  margin: 0
+  background: $main-bg-color
+
+#body_wrapper
+  position: absolute
+
+a
+  color: $main-text-color
+  text-decoration: none
+  margin: 0
+  padding: 0
+
+p, img
+  margin: 0
+  padding: 0
+
+img
+  max-width: 100%
+  height: auto
+
+a:hover
+  color: $menu-hover-text-color
+  text-decoration: none
+
+.preloader
+  // фиксированное позиционирование
+  position: fixed
+  // координаты положения
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  // фоновый цвет элемента
+  background: white
+  // размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице)
+  z-index: 1001
+
+.preloader__row
+  position: relative
+  top: 50%
+  left: 50%
+  width: 70px
+  height: 70px
+  margin-top: -35px
+  margin-left: -35px
+  text-align: center
+  // animation: preloader-rotate 2s infinite linear
+
+.loading-text
+  color: black
+  font-size: 2rem
+  font-family: "ImpactRegular"
+@keyframes scaling
+  0%, 100%
+    transform: scale(0.1)
+
+  50%
+    transform: scale(1)
+
+.dots
+  display: flex
+  justify-content: center
+
+.dots-divs
+  display: inline-flex
+  align-items: center
+  margin-left: 30px
+
+.dots-div
+  height: 10px
+  width: 10px
+  border-radius: 50%
+  transform: scale(0)
+  background-color: black
+  animation: scaling 1s ease-in-out infinite
+  // display: inline-block
+  margin: .5rem
+
+  &:nth-child(0)
+    animation-delay: 0s
+
+  &:nth-child(1)
+    animation-delay: 0.1s
+
+  &:nth-child(2)
+    animation-delay: 0.2s
+
+  &:nth-child(3)
+    animation-delay: 0.3s
+
+  &:nth-child(4)
+    animation-delay: 0.4s
+
+  &:nth-child(5)
+    animation-delay: 0.5s
+
+.preloader__item
+  position: absolute
+  display: inline-block
+  top: 0
+  background-color: #337ab7
+  border-radius: 100%
+  width: 35px
+  height: 35px
+  animation: preloader-bounce 2s infinite ease-in-out
+
+  &:last-child
+    top: auto
+    bottom: 0
+    animation-delay: -1s
+
+@keyframes preloader-rotate
+  100%
+    transform: rotate(360deg)
+
+@keyframes preloader-bounce
+  0%,
+  100%
+    transform: scale(0)
+
+  50%
+    transform: scale(1)
+
+.loaded_hiding .preloader
+  transition: 0.3s opacity
+  opacity: 0
+
+.loaded .preloader
+  display: none
+
+/* Video Background
+
+#myVideo
+  position: fixed
+  right: 0
+  bottom: 0
+  min-width: 100%
+  min-height: 100%
+
+.circle-square
+  position: relative
+
+.circle
+  position: absolute
+  width: 32px
+  height: 32px
+  top: 50%
+  left: 50%
+  margin: -15px 0 0 -10px
+  border: 2px solid $mouse-color-circle-romb
+  border-radius: 80%
+  backface-visibility: hidden
+  z-index: 1
+
+.square
+  backface-visibility: hidden
+  top: 3px
+  left: 0px
+  position: absolute
+  /* margin: -15px 0 0 -10px;
+  width: 18px
+  height: 18px
+  transform: rotate(45deg)
+  border: 2px solid $mouse-color-circle-romb
+  z-index: 1
+
+.black-brd
+  border-color: black
+  z-index: 2
+
+/* My CSS
+.logo
+  position: fixed
+  top: 20px
+  left: 20px
+  z-index: 2
+
+.logo_text a
+  text-decoration: none
+  font-size: 1.2rem
+
+  &:hover
+    color: grey
+
+.shocase-main-page
+  // display: flex
+  justify-content: center
+  align-items: center
+
+.showcase
+  // background: $main-bg-color
+  // background: black
+  opacity: $main-bg-opacity
+  color: $main-text-color
+  height: 100vh
+  position: relative
+  display: flex
+  align-items: center
+  // overflow: hidden
+
+.showcase-container
+  // max-width: 960px
+  margin: auto
+  // overflow: hidden
+  padding: 0 3rem
+
+#showcase_title
+
+/* rotate arround mouse
+
+#showcase-id
+  display: flex
+  justify-content: center
+  align-items: center
+  // height: 100vh
+
+#showcase-id.rotate,
+.single_product__image.rotate
+  // transform: rotateX(calc(var(--mouseY))) rotateY(calc(var(--mouseX)))
+
+#showcase-id .rotate
+  transform: rotateX(calc(var(--mouseY))) rotateY(calc(var(--mouseX)))
+
+#showcase-id .rotate-rev
+  transform: rotateX(calc(var(--mouseRevY))) rotateY(calc(var(--mouseRevX)))
+
+.showcase-inner
+  // display: flex
+  // flex-direction: column
+  // align-items: center
+  // justify-content: center
+  // text-align: center
+  // height: 100%
+  width: auto
+
+.showcase
+  h1
+    font-family: $main-font-family-title
+    font-size: 8rem
+    transform: rotate(55deg)
+
+    /* animation: move 2s linear infinite;
+    animation: is-off 1s linear infinite
+    animation: move 2s linear infinite
+
+    /* animation: c2 1s infinite linear alternate-reverse, is-off 1s linear infinite;
+    #hideMe
+      animation: cssAnimation 2s forwards
+
+    @keyframes cssAnimation
+      0%
+        opacity: 1
+      90%
+        opacity: 1
+      100%
+        opacity: 0
+
+  p
+    font-size: 1.3rem
+
+/* MENU STYLES
+
+.menu-wrap
+  position: relative
+  z-index: 1
+<<<<<<< HEAD
+  height: 100vh
+  width: 100vw
+  overflow: hidden
+=======
+  // &::after
+  //   content: ''
+  //   display: block
+  //   position: absolute
+  //   left: -50%
+  //   top: -50%
+  //   width: 207vw
+  //   height: 202vh
+  //   // background: #ffffff url(../img/grainy_film_effect.png)
+  //   background-image: url(data:image/png;base64,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)
+  //   animation: grain 1.5s steps(6) infinite
+>>>>>>> master
+
+  .toggler
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 2
+    cursor: pointer
+    width: 50px
+    height: 50px
+    opacity: 0
+
+  .bascket
+    position: absolute
+    top: -3px
+    right: 50px
+    z-index: 1
+    width: 60px
+    // height: 60px
+    padding: 1rem
+
+  .hamburger
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 1
+    width: 60px
+    height: 60px
+    padding: 1rem
+
+    /* background: var(--primary-color;
+    display: flex
+    align-items: center
+    justify-content: center
+
+    > div
+      position: relative
+      flex: none
+      width: 100%
+      height: 2px
+      background: $main-text-color
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: all 0.4s ease
+
+      &::before
+        content: ''
+        position: absolute
+        z-index: 1
+        top: -7px
+        width: 100%
+        height: 2px
+        background: inherit
+
+      &::after
+        content: ''
+        position: absolute
+        z-index: 1
+        top: -7px
+        width: 100%
+        height: 2px
+        background: inherit
+        top: 7px
+
+  .toggler:checked
+  + .hamburger > div
+    transform: rotate(135deg)
+    background-color: $menu-hamburger-second
+    transition: .5s
+
+    &:before, &:after
+      top: 0
+      transform: rotate(90deg)
+
+    &:hover + .hamburger > div
+      transform: rotate(225deg)
+
+/* Hamburger Line */
+.menu-wrap .hamburger>div
+  position: relative
+  flex: none
+  width: 100%
+  height: 2px
+  background: $main-text-color
+  display: flex
+  align-items: center
+  justify-content: center
+  // transition: all 0.4s ease
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger>div::before,
+.menu-wrap .hamburger>div::after
+  content: ''
+  position: absolute
+  z-index: 1
+  top: -7px
+  width: 100%
+  height: 2px
+  background: inherit
+
+/* Moves Line Down */
+.menu-wrap .hamburger>div::after
+  top: 7px
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked+.hamburger>div
+  transform: rotate(135deg)
+  background-color: $menu-hamburger-second
+  // transition: .5s
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked+.hamburger>div:before,
+.menu-wrap .toggler:checked+.hamburger>div:after
+  top: 0
+  transform: rotate(90deg)
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover+.hamburger>div
+  transform: rotate(225deg)
+
+/* My own Menu
+
+.mymenu
+  &.closed
+    height: 0
+    transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53)
+    transition-duration: .4s
+    // animation: polygons-close 0.3s easeOutElastic
+  &.view
+    background-color: $menu-bg-color
+    height: 100vh
+    width: 100vw
+    color: $menu-text-color
+<<<<<<< HEAD
+    // transition: .4s
+    // clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%)
+    animation: polygons 0.5s cubic-bezier(0.065, 0.835, 0.5, 1.000)
+    display: flex
+    justify-content: center
+
+@keyframes polygons
+
+  0%
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0)
+
+  75%
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%)
+
+  // 85%
+    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%)
+=======
+    // transition: all 0.5s cubic-bezier(0.05, 0.94, 0, 0.98)
+    transition: all 1s cubic-bezier(0.01, 0.94, 0, 0.99) 0s
+    // clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%)
+    // animation: polygons 0.4s ease-in-out
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes polygons
+
+  85%
+    clip-path: polygon(0 0, 100% 0, 100% 61%, 0 80%)
+>>>>>>> master
+
+  100%
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+
+@keyframes polygons-close
+  0%
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+
+  85%
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%)
+
+  95%
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 20%)
+
+  98%
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 10%)
+
+  100%
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0)
+
+ul li
+  &.main-title p
+    font-size: 0.9rem
+    text-align: right
+    font-weight: bold
+
+  &.secondary-details p
+    padding-bottom: 10px
+    font-family: $main-font-family
+    font-size: 0.7rem
+    text-align: right
+
+ul.mymenu_list
+  z-index: 10
+
+ul.mymenu_list li a
+  color: #000000
+  position: relative
+  display: inline-block
+  // opacity: .7
+  animation: move 2s linear infinite
+
+ul.menu_list li a:after
+  left: 3px
+  text-shadow: -2px 0 #f00
+  animation: c1 2s infinite linear alternate-reverse, is-off 2s linear infinite
+
+.mymenu_list
+  display: none
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  padding-left: 0px
+  list-style-type: none
+
+  li
+    a
+      color: $menu-hover-text-color
+      &::before,
+      &::after
+        display: block
+        content: attr(data-text)
+        position: absolute
+        top: 0
+        color: #fff
+        // background: #111
+        overflow: hidden
+      &::before
+        left: -2px
+        // text-shadow: 2px 0 #00f
+        animation: c2 1s infinite linear alternate-reverse, is-off 2s linear infinite
+      &::after
+        left: 3px
+        text-shadow: -2px 0 #ff00b3
+        animation: c1 1s infinite linear alternate-reverse, is-off 2s linear infinite
+      &:hover
+        animation: none
+        &::before,
+        &::after
+          display: none
+
+    &:nth-child(1)
+      animation: FadeInMainMenu 0.4s linear
+      animation-fill-mode: both
+
+    &:nth-child(2)
+      animation: FadeInMainMenu 0.5s linear
+      animation-fill-mode: both
+
+    &:nth-child(3)
+      animation: FadeInMainMenu 0.6s linear
+      animation-fill-mode: both
+
+    &:nth-child(4)
+      animation: FadeInMainMenu 0.7s linear
+      animation-fill-mode: both
+
+    &:nth-child(5)
+      animation: FadeInMainMenu 0.8s linear
+      animation-fill-mode: both
+
+    &:nth-child(6)
+      animation: FadeInMainMenu 0.9s linear
+      animation-fill-mode: both
+
+    .menu-open
+
+.dsp-bl
+  display: block
+
+.mymenu_list__elements
+  font-family: "ImpactRegular"
+  font-weight:
+  font-size: 8rem
+  text-decoration: none
+  text-transform: uppercase
+  color: $menu-text-color
+
+/* Company Details
+
+.details
+  display: none
+  color: $menu-text-color
+  z-index: 10
+  position: absolute
+  right: 40px
+  bottom: 0px
+  list-style: none
+  font-family: $main-font-family
+  overflow: hidden
+
+.block
+  display: block
+
+.details
+  & ul
+    animation: FadeInCompanyDetails 1.5s linear
+    overflow: hidden
+
+  & li
+    position: relative
+    list-style: none
+    text-align: right !important
+    opacity: 1
+
+// details & ul li Main Menu
+
+/* ==========================================
+/* ======== All Products Page ===============
+/* ==========================================
+
+.products
+  padding-top: 50px
+  padding-bottom: 10px
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  flex-wrap: wrap
+
+.product
+  width: 400px
+  border: 1px solid #ddd
+  padding: 10px
+  margin: 10px
+  background-color: rgb(231, 231, 231)
+
+  &:hover
+    opacity: .9
+
+  img
+    max-width: 100%
+    height: auto
+
+.products__gallery
+  width: 50%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+
+.products__image
+  max-width: 100%
+  max-height: 100%
+  height: 33%
+  width: 100%
+  text-align: center
+  img
+    height: 100%
+
+.products__view-more
+  display: none
+
+.products__title
+  padding: 20px
+
+.image-preview-container .preview-header
+  display: none
+
+/* =================================
+/* ====== Single Product Page ======
+/* =================================
+.container.container-bg
+  // padding: 20px
+  color: white
+  background: black
+
+.single_product
+  // display: flex
+  padding-top: 150px
+  // justify-content: center
+  // align-items: center
+  // height: 100vh
+
+.single_product_title__details-sm
+  display: none
+
+.single_product__gallery
+  display: flex
+  padding-bottom: $elements-padding-bottom
+
+.big-img,
+.small-img
+  display: block
+
+.small-img
+  align-content: flex-start
+
+.single_product__img
+  // height: 50px
+  height: auto
+  display: flex
+  flex-direction: column
+  // justify-content: center
+  align-items: center
+  padding-left: 5px
+
+  img
+    max-width: 100%
+    height: auto
+    width: 207px
+
+.single_product__title,
+.single_product__details,
+.single_product__description,
+.single_product__price,
+.single_product__preorder
+  font-family: $main-font-family
+
+.single_product__title
+  display: block
+  vertical-align: baseline
+  text-transform: uppercase
+  font-weight: bold
+  font-size: 2rem
+  padding-bottom: 20px
+
+.single_product__title-md
+  font-family: "ImpactRegular", Arial, Helvetica, sans-serif
+  display: block
+  margin: 0
+  padding-bottom: $elements-padding-bottom
+
+.single_product__description
+  // padding-left: 40px
+
+.single_product__details p
+  padding-bottom: 40px
+  font-size: 1rem
+
+.single_product_sizes-lg
+  padding-bottom: $elements-padding-bottom
+
+.single_product__sizes
+  display: flex
+  flex-wrap: wrap
+  max-width: 100%
+  // padding-bottom: 40px
+  &:first-child
+    padding-bottom: 10px
+  .size_sm
+    border: 1px solid gray
+    margin-left: 2%
+    padding: 2%
+    width: 32%
+    text-align: center
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+
+.single_product__buttons
+  padding-bottom: $elements-padding-bottom
+
+.single_product__price-md
+  padding-bottom: $elements-padding-bottom
+  font-family: "ImpactRegular", Arial, Helvetica, sans-serif
+  font-size: 1.2rem
+  span
+    font-family: "ImpactRegular", Arial, Helvetica, sans-serif
+    padding-left: 10px
+    color: white
+
+.single_product__preorder-lg,
+.single_product__preorder-md,
+.single_product__buynow-lg,
+.single_product__buynow-md
+  // border: none
+  width: 100%
+  padding: 10px 20px
+  color: white
+  font-weight: bold
+  background: none
+  // margin-right: 5px
+  margin-bottom: 10px
+  box-sizing: border-box
+  border: 1px solid white
+
+  &:disabled
+    background: #fde900
+    color: black
+    // border: 1px solid white
+  &:hover
+    &:not([disabled])
+      transition: 0.5s
+      background: white
+      color: black
+      border: 1px solid black
+.single_product__preorder-lg
+  margin-bottom: 0
+
+.single_product__qnt, .single_product__price
+  font-weight: bold
+  font-size: 1.2rem
+
+// fancybox3 settings
+.fancybox-button.fancybox-button--thumbs,
+.fancybox-button.fancybox-button--play,
+.fancybox-button.fancybox-button--zoom,
+.fancybox-navigation,
+.fancybox-infobar
+  display: none !important
+
+.fancybox-slide.fancybox-slide--image.fancybox-slide--current.fancybox-slide--complete
+  background: #000000
+  opacity: 1
+
+.fancybox-slide--image
+  padding: 0 !important
+
+.fancybox-content::before
+  transition-delay: 0.3s
+  content: '-'
+  display: block
+  position: absolute
+  background: url('../img/bg--2.png') no-repeat center
+  height: 82px
+  width: 100%
+  top: 0
+  left: 0
+  color: white
+  z-index: 1000
+
+.fancybox-content::after
+  transition-delay: 0.3s
+  content: '-'
+  display: block
+  position: absolute
+  background: url('../img/bg--1.png') no-repeat center
+  height: 10%
+  width: 100%
+  bottom: -1px
+  left: 0
+  color: white
+  z-index: 1000
+
+.contact-us
+  background: black
+
+.contact-form
+  padding: 50px
+  background: white
+  margin: 0 auto
+
+.form-container
+  display: block
+  max-width: 500px !important
+  margin: 0 auto
+
+.form-container_name,
+.form-container_email
+  display: block
+  width: 100%
+  margin-bottom: 20px
+
+//-------------- BASKET PAGE--------------
+.basket
+  font-size: 2.5rem
+
+/* ===================================
+/* =========== KeyFrames ===========
+/* ===================================
+@keyframes FadeInMainMenu
+  0%
+    opacity: 0
+    transform: translateX(170px)
+
+  55%
+    opacity: 0.1
+    transform: translateX(55px)
+
+  100%
+    opacity: 1
+    transform: translateX(0px)
+
+// .mymenu_list ul i Bottom Company Info
+@keyframes FadeInCompanyDetails
+  0%
+    opacity: 0
+    // transform: translateX(70px)
+
+  55%
+    opacity: 0.5
+    // transform: translateX(35px)
+
+  100%
+    opacity: 1
+    // transform: translateX(0px)
+
+//  @KeyFrame
+@keyframes grain
+  0%, 100%
+    transform: translate(0,0)
+  10%
+    transform: translate(-5%,-10%)
+  30%
+    transform: translate(3%,-15%)
+  50%
+    transform: translate(12%,9%)
+  70%
+    transform: translate(9%,4%)
+  90%
+    transform: translate(-1%,7%)
+
+@keyframes slideInLeft
+  0%
+    /* opacity: 0;
+    transform: scale(0.8)
+
+    /* margin-left: 5%;
+
+  85%
+    opacity: 1
+    transform: scale(1.05)
+
+    /* margin-left: 0%;
+
+  100%
+    opacity: 1
+    transform: scale(1)
+
+@keyframes move
+  0%
+    transform: translate(3px, 2px)
+
+  2%
+    transform: translate(2px, 1px)
+
+  4%
+    transform: translate(1px, 2px)
+
+  6%
+    transform: translate(1px, 2px)
+
+  8%
+    transform: translate(2px, 4px)
+
+  10%
+    transform: translate(1px, 2px)
+
+  12%
+    transform: translate(3px, 1px)
+
+  14%
+    transform: translate(3px, 1px)
+
+  16%
+    transform: translate(5px, 2px)
+
+  18%
+    transform: translate(4px, 3px)
+
+  20%
+    transform: translate(2px, 4px)
+
+  22%
+    transform: translate(2px, 4px)
+
+  24%
+    transform: translate(3px, 1px)
+
+  26%
+    transform: translate(5px, 2px)
+
+  28%
+    transform: translate(4px, 1px)
+
+  30%
+    transform: translate(1px, 4px)
+
+  32%
+    transform: translate(5px, 2px)
+
+  34%
+    transform: translate(2px, 1px)
+
+  36%
+    transform: translate(5px, 5px)
+
+  38%
+    transform: translate(3px, 4px)
+
+  40%
+    transform: translate(5px, 1px)
+
+  42%
+    transform: translate(1px, 2px)
+
+  44%
+    transform: translate(5px, 5px)
+
+  46%
+    transform: translate(4px, 2px)
+
+  48%
+    transform: translate(2px, 3px)
+
+  50%
+    transform: translate(5px, 5px)
+
+  52%
+    transform: translate(1px, 3px)
+
+  54%
+    transform: translate(1px, 5px)
+
+  56%
+    transform: translate(3px, 4px)
+
+  58%
+    transform: translate(4px, 5px)
+
+  60%
+    transform: translate(3px, 1px)
+
+  62%
+    transform: translate(3px, 3px)
+
+  64%
+    transform: translate(1px, 1px)
+
+  66%
+    transform: translate(3px, 4px)
+
+  68%
+    transform: translate(4px, 5px)
+
+  70%
+    transform: translate(2px, 5px)
+
+  72%
+    transform: translate(5px, 5px)
+
+  74%
+    transform: translate(3px, 4px)
+
+  76%
+    transform: translate(1px, 4px)
+
+  78%
+    transform: translate(4px, 1px)
+
+  80%
+    transform: translate(4px, 1px)
+
+  82%
+    transform: translate(1px, 1px)
+
+  84%
+    transform: translate(5px, 5px)
+
+  86%
+    transform: translate(4px, 2px)
+
+  88%
+    transform: translate(1px, 5px)
+
+  90%
+    transform: translate(1px, 1px)
+
+  92%
+    transform: translate(3px, 3px)
+
+  94%
+    transform: translate(5px, 1px)
+
+  96%
+    transform: translate(5px, 4px)
+
+  98%
+    transform: translate(2px, 1px)
+
+  100%
+    transform: translate(3px, 2px)
+
+@keyframes glitch-anim
+  0%
+    clip: rect(96px, 9999px, 97px, 0)
+    transform: skew(0.97deg)
+
+  5%
+    clip: rect(14px, 9999px, 78px, 0)
+    transform: skew(0.07deg)
+
+  10%
+    clip: rect(45px, 9999px, 70px, 0)
+    transform: skew(0.28deg)
+
+  15%
+    clip: rect(73px, 9999px, 6px, 0)
+    transform: skew(0.75deg)
+
+  20%
+    clip: rect(63px, 9999px, 17px, 0)
+    transform: skew(0.83deg)
+
+  25%
+    clip: rect(96px, 9999px, 95px, 0)
+    transform: skew(0.71deg)
+
+  30%
+    clip: rect(96px, 9999px, 46px, 0)
+    transform: skew(0.47deg)
+
+  35%
+    clip: rect(65px, 9999px, 83px, 0)
+    transform: skew(0.85deg)
+
+  40%
+    clip: rect(7px, 9999px, 28px, 0)
+    transform: skew(0.58deg)
+
+  45%
+    clip: rect(71px, 9999px, 20px, 0)
+    transform: skew(0.97deg)
+
+  50%
+    clip: rect(48px, 9999px, 15px, 0)
+    transform: skew(0.64deg)
+
+  55%
+    clip: rect(71px, 9999px, 8px, 0)
+    transform: skew(0.16deg)
+
+  60%
+    clip: rect(3px, 9999px, 12px, 0)
+    transform: skew(0.61deg)
+
+  65%
+    clip: rect(100px, 9999px, 26px, 0)
+    transform: skew(0.49deg)
+
+  70%
+    clip: rect(33px, 9999px, 4px, 0)
+    transform: skew(0.93deg)
+
+  75%
+    clip: rect(11px, 9999px, 25px, 0)
+    transform: skew(0.1deg)
+
+  80%
+    clip: rect(43px, 9999px, 20px, 0)
+    transform: skew(1deg)
+
+  85%
+    clip: rect(28px, 9999px, 48px, 0)
+    transform: skew(0.86deg)
+
+  90%
+    clip: rect(23px, 9999px, 43px, 0)
+    transform: skew(0.36deg)
+
+  95%
+    clip: rect(76px, 9999px, 60px, 0)
+    transform: skew(0.6deg)
+
+  100%
+    clip: rect(68px, 9999px, 56px, 0)
+    transform: skew(0.62deg)
+
+@keyframes glitch-anim2
+  0%
+    clip: rect(67px, 9999px, 54px, 0)
+    transform: skew(0.79deg)
+
+  5%
+    clip: rect(83px, 9999px, 51px, 0)
+    transform: skew(0.59deg)
+
+  10%
+    clip: rect(2px, 9999px, 6px, 0)
+    transform: skew(0.53deg)
+
+  15%
+    clip: rect(18px, 9999px, 1px, 0)
+    transform: skew(0.43deg)
+
+  20%
+    clip: rect(30px, 9999px, 58px, 0)
+    transform: skew(0.87deg)
+
+  25%
+    clip: rect(61px, 9999px, 71px, 0)
+    transform: skew(0.52deg)
+
+  30%
+    clip: rect(66px, 9999px, 98px, 0)
+    transform: skew(0.43deg)
+
+  35%
+    clip: rect(81px, 9999px, 97px, 0)
+    transform: skew(0.21deg)
+
+  40%
+    clip: rect(57px, 9999px, 66px, 0)
+    transform: skew(0.98deg)
+
+  45%
+    clip: rect(72px, 9999px, 9px, 0)
+    transform: skew(0.4deg)
+
+  50%
+    clip: rect(38px, 9999px, 46px, 0)
+    transform: skew(0.98deg)
+
+  55%
+    clip: rect(98px, 9999px, 92px, 0)
+    transform: skew(0.29deg)
+
+  60%
+    clip: rect(90px, 9999px, 71px, 0)
+    transform: skew(0.79deg)
+
+  65%
+    clip: rect(52px, 9999px, 67px, 0)
+    transform: skew(0.7deg)
+
+  70%
+    clip: rect(28px, 9999px, 82px, 0)
+    transform: skew(0.48deg)
+
+  75%
+    clip: rect(35px, 9999px, 96px, 0)
+    transform: skew(0.99deg)
+
+  80%
+    clip: rect(51px, 9999px, 46px, 0)
+    transform: skew(0.68deg)
+
+  85%
+    clip: rect(8px, 9999px, 69px, 0)
+    transform: skew(0.85deg)
+
+  90%
+    clip: rect(47px, 9999px, 79px, 0)
+    transform: skew(0.21deg)
+
+  95%
+    clip: rect(82px, 9999px, 1px, 0)
+    transform: skew(0.32deg)
+
+  100%
+    clip: rect(58px, 9999px, 85px, 0)
+    transform: skew(0.19deg)
+
+@keyframes glitch-skew
+  0%
+    transform: skew(0.5deg)
+
+  10%
+    transform: skew(0.5deg)
+
+  20%
+    transform: skew(-0.5deg)
+
+  30%
+    transform: skew(0.5deg)
+
+  40%
+    transform: skew(-1.5deg)
+
+  50%
+    transform: skew(1.5deg)
+
+  60%
+    transform: skew(0.5deg)
+
+  70%
+    transform: skew(1.5deg)
+
+  80%
+    transform: skew(-0.5deg)
+
+  90%
+    transform: skew(1.5deg)
+
+  100%
+    transform: skew(1.5deg)
+
+@keyframes blink
+  0%
+    opacity: 0
+    filter: alpha(opacity = 0)
+
+  10%
+    opacity: 0
+    filter: alpha(opacity = 0)
+
+  20%
+    opacity: 0.66
+    filter: alpha(opacity = 66)
+
+  23%
+    opacity: 0.25
+    filter: alpha(opacity = 25)
+
+  28%
+    opacity: 0.8
+    filter: alpha(opacity = 80)
+
+  30%
+    opacity: 0.2
+    filter: alpha(opacity = 20)
+
+  33%
+    opacity: 1
+    filter: alpha(opacity = 100)
+
+  100%
+    opacity: 1
+    filter: alpha(opacity = 100)
+
+@keyframes is-off
+  0%
+    opacity: 1
+
+  50%
+    opacity: 1
+
+  56%
+    opacity: 0
+
+  57%
+    opacity: 0
+
+  58%
+    opacity: 1
+
+  71%
+    transform: scaleY(1) skewX(0deg)
+
+  72%
+    transform: scaleY(3) skewX(-60deg)
+
+  73%
+    transform: scaleY(1) skewX(0deg)
+
+  80%
+    opacity: 1
+
+  81%
+    opacity: 0
+
+  84%
+    opacity: 0
+
+  85%
+    opacity: 1
+
+  91%
+    transform: scaleX(1) scaleY(1) skewX(0deg)
+    color: #fff
+
+  92%
+    transform: scaleX(1.5) scaleY(0.2) skewX(80deg)
+    color: #008000
+
+  93%
+    transform: scaleX(1) scaleY(1) skewX(0deg)
+    color: #fff
+
+@keyframes c1
+  0%
+    clip: rect(48px, 9999px, 17px, 0)
+
+  5%
+    clip: rect(6px, 9999px, 33px, 0)
+
+  10%
+    clip: rect(54px, 9999px, 52px, 0)
+
+  15.000000000000002%
+    clip: rect(42px, 9999px, 43px, 0)
+
+  20%
+    clip: rect(99px, 9999px, 38px, 0)
+
+  25%
+    clip: rect(73px, 9999px, 23px, 0)
+
+  30.000000000000004%
+    clip: rect(47px, 9999px, 97px, 0)
+
+  35.00000000000001%
+    clip: rect(68px, 9999px, 6px, 0)
+
+  40%
+    clip: rect(10px, 9999px, 77px, 0)
+
+  45%
+    clip: rect(61px, 9999px, 76px, 0)
+
+  50%
+    clip: rect(75px, 9999px, 47px, 0)
+
+  55%
+    clip: rect(100px, 9999px, 98px, 0)
+
+  60.00000000000001%
+    clip: rect(70px, 9999px, 73px, 0)
+
+  65%
+    clip: rect(49px, 9999px, 54px, 0)
+
+  70.00000000000001%
+    clip: rect(69px, 9999px, 11px, 0)
+
+  75%
+    clip: rect(39px, 9999px, 1px, 0)
+
+  80%
+    clip: rect(35px, 9999px, 90px, 0)
+
+  85%
+    clip: rect(65px, 9999px, 28px, 0)
+
+  90%
+    clip: rect(59px, 9999px, 9px, 0)
+
+  95%
+    clip: rect(16px, 9999px, 5px, 0)
+
+  100%
+    clip: rect(33px, 9999px, 98px, 0)
+
+@keyframes c2
+  0%
+    clip: rect(85px, 9999px, 7px, 0)
+
+  5%
+    clip: rect(80px, 9999px, 75px, 0)
+
+  10%
+    clip: rect(38px, 9999px, 50px, 0)
+
+  15.000000000000002%
+    clip: rect(84px, 9999px, 78px, 0)
+
+  20%
+    clip: rect(47px, 9999px, 77px, 0)
+
+  25%
+    clip: rect(99px, 9999px, 72px, 0)
+
+  30.000000000000004%
+    clip: rect(81px, 9999px, 42px, 0)
+
+  35.00000000000001%
+    clip: rect(18px, 9999px, 98px, 0)
+
+  40%
+    clip: rect(38px, 9999px, 4px, 0)
+
+  45%
+    clip: rect(8px, 9999px, 41px, 0)
+
+  50%
+    clip: rect(74px, 9999px, 81px, 0)
+
+  55%
+    clip: rect(97px, 9999px, 36px, 0)
+
+  60.00000000000001%
+    clip: rect(16px, 9999px, 68px, 0)
+
+  65%
+    clip: rect(47px, 9999px, 100px, 0)
+
+  70.00000000000001%
+    clip: rect(55px, 9999px, 89px, 0)
+
+  75%
+    clip: rect(45px, 9999px, 79px, 0)
+
+  80%
+    clip: rect(69px, 9999px, 93px, 0)
+
+  85%
+    clip: rect(35px, 9999px, 73px, 0)
+
+  90%
+    clip: rect(21px, 9999px, 26px, 0)
+
+  95%
+    clip: rect(29px, 9999px, 84px, 0)
+
+  100%
+    clip: rect(48px, 9999px, 73px, 0)
+
+  23%
+    transform: scaleX(0.8)
+
+/* ===================================
+/* =========== Media Query ===========
+/* ===================================
+
+@media (max-width: 575.98px)
+  // color
+
+/* Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px)
+  .circle-square
+    display: none
+
+  .showcase-container
+    padding: 0
+
+  .mymenu
+    position: relative
+
+  .mymenu_list__elements
+    font-size: 4.5rem
+
+  .details
+    right: 16px
+    bottom: 4px !important
+
+  .showcase-inner h1
+    font-size: 2.7rem
+
+  .single_product
+    padding-top: 95px
+
+  .single_product__title-sm h3,
+  .single_product__price-sm
+    font-size: 1.6rem
+    padding: 0
+    margin: 0
+  //
+  .single_product__buttons
+    padding-bottom: $elements-padding-bottom
+    // display: flex
+    // flex-wrap: wrap
+    // justify-content: flex-end
+
+  .single_product__details
+    padding-left: 0
+
+  .single_product__title-md,
+  .single_product__price-md
+    display: none
+
+  // .single_product__description
+  //   padding-top: $elements-padding-bottom
+
+  .fancybox-content::before,
+  .fancybox-content::after
+    display: none
+  // section.details ul li
+  //   &.main-title p, &.secondary-details p
+  //     text-align: left !important
+
+  .single_product__gallery
+
+  .single_product_title__details-sm
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom: $elements-padding-bottom
+
+  .single_product_title__details-sm h3,
+  .single_product__price-sm
+    font-size: 1.2rem
+
+  /* Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px)
+  // color
+
+/* Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px)
+  // color
+
+// ===================

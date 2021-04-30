@@ -1,0 +1,41 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  // <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  link(rel='stylesheet' href='css/bootstrap.min.css')
+  link(rel='stylesheet' href='css/animate.min.css')
+  link(rel='stylesheet' href='css/style.css')  
+  title Hamburger Menu Overlay
+#body-wrapper 
+  .sandy-video_bg
+    // <div class="grained"></div>
+    video#myVideo(autoplay='' muted='' loop='')
+      source(src='../video/home.webm' type='video/mp4')
+  .circle-square
+    .circle
+    .square
+  .logo.light
+    .logo_text
+      a(href='/') MERCH
+  .menu-wrap
+    input.toggler(type='checkbox')
+    .hamburger
+      div h1 ddd
+    .mymenu.closed
+      ul.mymenu_list
+        li
+          a.mymenu_list__elements(data-text='Product 1' href='product-1.html') Product 1
+        li
+          a.mymenu_list__elements(data-text='Product 2' href='product-2.html') Product 2
+        li
+          a.mymenu_list__elements(data-text='Product 3' href='product-3.html') Product 3
+        li
+          a.mymenu_list__elements(data-text='Product 4' href='product-4.html') Product 4
+        li
+          a.mymenu_list__elements(data-text='All Products' href='all-products.html')
+            | All
+            | Products
+        li
+          a.mymenu_list__elements(data-text='Contact' href='contact.html') Contact

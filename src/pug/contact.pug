@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  include parts/head.pug
+  body#body-id
+    //- HEADER
+    include parts/header.pug
+    section#showcase_title.showcase.contact-us
+      .shocase-main-page.showcase-container
+        //- h1 Contact
+        br
+        .contact-form
+          .form-container(style='background-color:white')
+            input.form-container_name(type='text' placeholder='Name' name='name' required='')
+            input.form-container_email(type='text' placeholder='Email address' name='mail' required='')
+            label
+              input(type='checkbox' checked='checked' name='subscribe')
+              |  Daily Newsletter
+          .form-container
+            input(type='submit' value='Subscribe')
+
+
+    //- FOOTER
+    include parts/footer.pug
+
