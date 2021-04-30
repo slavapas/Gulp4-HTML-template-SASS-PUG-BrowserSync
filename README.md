@@ -12,7 +12,8 @@ npm install
 ```
 - You also need to install the gulp command line utility
 ```
-npm global add gulp-cli
+npm install -g gulp-cli
+npm install --save-dev gulp
 ```
 - And you're ready to run the `gulp` command
 
